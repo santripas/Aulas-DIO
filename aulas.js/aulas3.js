@@ -34,7 +34,7 @@ const sandro = Object.create(pessoa)
 sandro.nome = 'Sandro'
 
 console.log(sandro)
-*/
+
 
 //==================================================
 
@@ -48,3 +48,13 @@ Pessoa.prototype.falar = function () {
 }
 const sandro = new Pessoa('sandro',30)
 sandro.falar()
+*/
+const renan = {
+    nome: 'Renan'
+}
+
+renan.__proto__ = {
+    idade: 30
+}
+
+console.log(renan.idade)
