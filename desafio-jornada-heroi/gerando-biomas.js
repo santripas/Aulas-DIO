@@ -13,7 +13,7 @@ let minerais = ["Carvao", "Ferro", "Diamante", "Pedra"];
 for (let i = 1; i <= quantidadeGolpes; i++) {
   // Calcula o índice do mineral usando o operador de módulo (%) para garantir que o índice esteja dentro do tamanho do array
   let minaIndex = i % minerais.length;
-  
+
   // TODO: Agora exiba o índice i, concatene com o caractere ":", após, concatene com tipo de minerais[minaIndex]:
-  console.log(i, ":" ,minerais[minaIndex] );
+  console.log(i, ":", minerais[minaIndex]);
 }
