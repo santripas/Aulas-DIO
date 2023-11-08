@@ -30,5 +30,14 @@ promessasDeUmNumeroQualquer
 //================================== Manipulando Arquivos através de Promises ==========================
 
     const fs = require('fs')
+    const path = require('path')
 
-    fs.readFile()
+    const filePath =  path.resolve(__dirname, 'aulas6.csv')
+
+    const promessaDaLeituraDoArquivo = fs.promises.readFile(filePath)
+
+    promessaDaLeituraDoArquivo.then((arquivo) => {
+        console.log(arquivo.toString('utf-8'))
+    }).catch((error) => {
+        console.log('Deu ruim!')
+    })
